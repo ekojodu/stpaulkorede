@@ -1,12 +1,8 @@
 :root {
-	--bg-color: #000;
-	--main-color: #fff;
-	--secondary-color: #fff;
-	--first-size: 3em;
-	--second-size: 2.3em;
-	--third-size: 1.5em;
+	--bg-color: #fff;
+	--body-color: #2e8b57;
+	--text-color: #6e6e6e;
 }
-
 * {
 	margin: 0;
 	padding: 0;
@@ -14,16 +10,29 @@
 	text-decoration: none;
 }
 article {
-	padding: 50px 0;
+	padding: 50px;
 	text-align: justify;
 }
 
+article h2 {
+	background-color: var(--body-color);
+	color: var(--bg-color);
+	padding: 10px;
+}
 article p {
 	margin-bottom: 30px;
-	font-size: 20px;
 	line-height: 25px;
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
+	color: var(--text-color);
+	font-size: 1.2em;
+}
+
+article ol li {
+	color: var(--text-color);
+	font-size: 1.2em;
+	padding-bottom: 0.8em;
+	line-height: 25px;
 }
 
 .btn {
@@ -45,11 +54,6 @@ article p {
 	scale: 1.1;
 }
 
-:root {
-	--bg-color: #fff;
-	--body-color: #000;
-	--text-color: #6e6e6e;
-}
 /* GENERAL STYLING */
 * {
 	margin: 0;
@@ -59,8 +63,9 @@ article p {
 
 body {
 	/* font-family: Arial, sans-serif; */
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'Poppins', sans-serif;
 	background: url(wallpaper.jpeg);
+	color: var(--body-color);
 }
 
 section {
@@ -71,6 +76,7 @@ section {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	background-color: var(--bg-color);
 	/* padding: 0 7%; */
 }
 
@@ -79,7 +85,8 @@ section {
 	left: 0;
 	top: 0;
 	width: 100%;
-	margin-bottom: 20px;
+	border-bottom: 1px solid #000;
+	/* margin-bottom: 20px; */
 }
 
 .header .header-container {
@@ -92,7 +99,6 @@ section {
 	flex-direction: column;
 	text-align: center;
 	background-color: var(--bg-color);
-	color: var(--body-color);
 }
 
 .header .logo {
@@ -144,7 +150,7 @@ section {
 
 .header .menu a {
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.8em;
 	color: var(--body-color);
 	line-height: 1.5;
 	display: block;
@@ -201,6 +207,7 @@ section {
 
 .header .menu .sub-menu a {
 	padding: 6px 24px;
+	font-size: 1.2em;
 }
 
 .header .menu .sub-menu .dropdown > a {
@@ -515,7 +522,6 @@ section {
 /* END OF HOME SECTION STYLING */
 /* START OF WELCOME DIV STYLING */
 .welcome .container {
-	background-color: #fff;
 	border-bottom: 1px solid black;
 }
 
@@ -533,13 +539,13 @@ section {
 
 .welcome-text h1 {
 	font-size: 3em;
-	color: #66ff66;
 	padding-bottom: 10px;
 }
 
 .welcome-text i {
 	font-size: 1.5em;
 	padding-bottom: 20px;
+	color: var(--text-color);
 }
 
 .marquee {
@@ -571,7 +577,6 @@ section {
 }
 
 .about .container {
-	background-color: #fff;
 	display: flex;
 	gap: 20px;
 	/* align-items: flex-start; */
@@ -628,14 +633,13 @@ section {
 	font-size: 1.5em;
 	line-height: 1.2;
 	text-align: justify;
+	color: var(--text-color);
 }
 
 /* END OF ABOUT SECTION STYLING */
 
 /* INTRO SECTION STYLING */
 .intro .container {
-	background-color: #fff;
-	color: #000;
 	display: flex;
 	flex-direction: column;
 	border-top: 2px solid #333;
@@ -646,6 +650,10 @@ section {
 	text-align: center;
 	font-size: 2em;
 	padding-bottom: 20px;
+}
+
+.intro .container p {
+	color: var(--text-color);
 }
 
 .intro-container {
@@ -672,45 +680,45 @@ section {
 	padding-bottom: 6px;
 }
 
-.reading {
-	background-color: #fff;
-}
+/* .reading {
+	background-color: ;
+} */
 
 /* END OF INTRO SECTION STYLING */
 /* START OF HISTORY SECTION STYLING */
-.ourHistory {
-	padding: 20px 0;
-}
-
-.ourHistory .container {
-	background-color: var(--main-color);
-}
-
 .ourHistory-text {
 	padding: 20px;
 	text-align: justify;
 }
-
+.ourHistory-text h2 {
+	font-size: 1.8em;
+	margin-bottom: 0.8em;
+	background-color: var(--body-color);
+	color: var(--bg-color);
+	padding: 10px;
+}
 .ourHistory-text p {
+	color: var(--text-color);
 	margin-bottom: 30px;
 }
 
 .counter-card {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .counter {
-	font-size: 24px;
+	font-size: 1.6em;
 	text-align: center;
 	margin: 20px 0;
-	border: 2px dotted;
+	background-color: var(--body-color);
+	color: var(--bg-color);
 }
 
 .count {
 	display: block;
 	/* Display inline */
-	font-weight: bold;
+	font-weight: 900;
 }
 
 .counter-text {
@@ -722,13 +730,6 @@ section {
 /* END OF HISTORY SECTION STYLING */
 
 /* START OF PATRON SAINT SECTION STYLING */
-.patronSaint {
-	margin-top: 20px;
-}
-.patronSaint .container {
-	background-color: var(--main-color);
-}
-
 .patronSaint article {
 	padding: 20px;
 }
@@ -736,11 +737,9 @@ section {
 .patronSaint article h1 {
 	font-size: 2em;
 	margin-bottom: 10px;
-	text-decoration: underline;
-}
-
-.patronSaint article p {
-	font-size: 1.2em;
+	background-color: var(--body-color);
+	color: var(--bg-color);
+	padding: 10px;
 }
 /* END OF PATRON SAINT SECTION STYLING */
 
@@ -782,7 +781,144 @@ section {
 .parishSocieties td:last-child {
 	border-right: none;
 }
-/* END OF SOCIETIES SECTION DESIGN */
+/* END OF SOCIETIES SECTION STYLING */
+/* START OF ACTIVITIES SECTION STYLING */
+.activities {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	padding-top: 20px;
+}
+
+.activities-head {
+	font-size: 1.6em;
+}
+.activities .content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	padding: 20px;
+	width: 80%;
+}
+.content .content-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	gap: 0.8em;
+	padding: 20px;
+}
+
+.content-card h3 {
+	font-size: 1.6em;
+	background-color: var(--body-color);
+	color: var(--bg-color);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.content-card p {
+	font-size: 1.2em;
+	color: var(--text-color);
+	font-weight: 600;
+	padding: 5px;
+}
+/* END OF ACTIVITIES SECTION STYLING */
+
+/* START OF CONTACT SECTION STYLING */
+.contact-map {
+	text-align: center;
+	padding: 20px;
+}
+
+iframe {
+	max-width: 70rem;
+	height: 500px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.contact-form {
+	max-width: 70rem;
+	margin: 1rem auto;
+	text-align: center;
+	/* margin-bottom: 3rem; */
+	padding: 20px 0;
+}
+
+.contact-form h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 3rem;
+}
+
+.contact .input-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 1.6rem;
+	color: var(--body-color);
+	background: var(--bg-color);
+	border-radius: 0.8rem;
+	margin: 0.7rem 0;
+	box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+}
+
+.contact form .input-box input {
+	width: 49%;
+}
+
+.contact form textarea {
+	resize: none;
+}
+
+.contact form .btn {
+	background-color: var(--body-color);
+	color: var(--bg-color);
+	margin-top: 2rem;
+	cursor: pointer;
+}
+/* END OF CONTACT SECTION STYLING */
+/* START OF DONATION SECTION STYLING */
+.parish_donations {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 30px;
+}
+.donation-head h2 {
+	font-size: 3em;
+	background-color: var(--body-color);
+	color: var(--bg-color);
+	padding: 10px;
+	border-radius: 5px;
+}
+.donation-body {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+}
+.donation-body h4 {
+	font-size: 2em;
+	padding: 20px;
+	font-weight: 700;
+}
+.donation-body p {
+	font-size: 1.4em;
+	padding: 10px;
+	font-weight: 500;
+}
+/* END OF DONATION SECTION STYLING */
 /* END OF MAIN SECTION STYLING */
 
 /* FOOTER SECTION STYLING */
