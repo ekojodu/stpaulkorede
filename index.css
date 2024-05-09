@@ -810,7 +810,28 @@ footer a {
 footer a:hover {
 	text-decoration: underline;
 }
-
+.footer-social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-social-icon a {
+	color: #fff;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+.footer-social-icon i {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+}
+#facebook-bg {
+	background: #3b5998;
+}
 .footing .container {
 	background-color: #fff;
 	color: #000;
