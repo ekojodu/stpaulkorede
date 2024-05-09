@@ -1011,10 +1011,9 @@ footer a:hover {
 	.about-image {
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 21em;
+		margin-bottom: 10em;
 	}
 
 	.photo img {
