@@ -1044,6 +1044,7 @@ footer a:hover {
 		text-align: left; /* Align text to the left */
 	}
 	.footer-section {
+		width: 100%; /* Make each section occupy full width */
 		margin-bottom: 20px; /* Add some space between sections */
 	}
 }
