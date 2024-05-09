@@ -1012,7 +1012,8 @@ footer a:hover {
 		display: block;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 5em;
+		margin-top: 10em;
+		margin-bottom: 10em;
 	}
 
 	/* .photo img {
