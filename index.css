@@ -1014,10 +1014,14 @@ footer a:hover {
 		justify-content: center;
 		margin-bottom: 16em;
 	}
-
-	.photo img {
+	.photo {
 		width: 80%;
 		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.photo img {
 		width: 160px;
 		height: 150px;
 	}
