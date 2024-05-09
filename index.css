@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+	/* You can also specify different font file formats for better compatibility */
+}
+
 :root {
 	--bg-color: #fff;
 	--body-color: #2e8b57;
@@ -259,6 +265,10 @@ section {
 }
 .header-right .open-menu-btn span {
 	color: var(--bg-color);
+}
+
+.header-right .open-menu-btn:hover {
+	scale: 1.1;
 }
 
 @media (max-width: 991px) {
@@ -952,7 +962,11 @@ footer .container {
 
 footer h2 {
 	margin-bottom: 10px;
-	text-decoration: underline;
+	padding: 10px;
+	text-align: center;
+	background-color: var(--body-color);
+	border-radius: 10px;
+	color: var(--bg-color);
 }
 
 footer p {
@@ -971,6 +985,8 @@ footer li {
 
 footer a {
 	text-decoration: none;
+	font-size: 1.2em;
+	color: var(--body-color);
 }
 
 footer a:hover {

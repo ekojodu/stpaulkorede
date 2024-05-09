@@ -164,4 +164,4 @@ document.addEventListener('DOMContentLoaded', function () {
 let footerParagraph = document.getElementById('footerParagraph');
 let date = new Date();
 let year = date.getFullYear();
-footerParagraph.innerHTML = `Copyright &copy; ${year}. All Rights Reserved`;
+footerParagraph.innerHTML = `&copy; ${year} St. Paul Catholic Church. All Rights Reserved`;
