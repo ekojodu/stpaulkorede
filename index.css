@@ -1038,9 +1038,12 @@ footer a:hover {
 		padding: 10px;
 	}
 	.footer {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		text-align: left;
-		justify-content: flex-start;
+		display: flex; /* Use flexbox for layout */
+		flex-direction: column; /* Stack items vertically */
+		align-items: flex-start; /* Align items to the left */
+		text-align: left; /* Align text to the left */
+	}
+	.footer-section {
+		margin-bottom: 20px; /* Add some space between sections */
 	}
 }
