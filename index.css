@@ -1011,12 +1011,15 @@ footer a:hover {
 	.about-image {
 		width: 100%;
 		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20em;
 	}
 
-	.photo {
-		width: 80%;
-		margin: 0 auto;
-		margin-bottom: 2em;
+	.photo img {
+		align-items: center;
+		width: 60%;
+		height: 60%;
 	}
 	.cards {
 		width: 80%;
