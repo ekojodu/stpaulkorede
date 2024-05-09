@@ -452,6 +452,12 @@ section {
 	}
 }
 
+@media (max-width: 486px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
 /* END OF HEADER SECTION STYLING */
 
 /* WELCOME SECTION STYLING */
