@@ -1012,14 +1012,13 @@ footer a:hover {
 		display: block;
 		align-items: center;
 		justify-content: center;
-		margin-top: 10em;
 		margin-bottom: 10em;
 	}
 
-	/* .photo img {
-		width: 60%;
-		height: 60%;
-	} */
+	.photo img {
+		width: 160px;
+		height: 150px;
+	}
 	.cards {
 		width: 80%;
 		margin: 0 auto;
