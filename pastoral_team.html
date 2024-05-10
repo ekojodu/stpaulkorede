@@ -20,6 +20,55 @@
 		/>
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" href="index.css" />
+		<style>
+			.pastoralTeam h2 {
+				text-align: center;
+				font-size: 3em;
+				padding: 20px 0;
+				color: var(--bg-color);
+				background-color: var(--main-color);
+			}
+			.bishop {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				padding: 50px;
+			}
+			.bishop img,
+			.priest img,
+			.deacon img,
+			.cathechist1 img,
+			.cathechist2 img {
+				width: 320px;
+				height: 300px;
+				border-radius: 50%;
+			}
+			.priest {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				text-align: center;
+				flex-wrap: wrap;
+				padding: 50px;
+			}
+			.deacon {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				padding: 50px;
+			}
+			.cathechist1,
+			.cathechist2 {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				text-align: center;
+				flex-wrap: wrap;
+				padding-top: 50px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -121,6 +170,7 @@
 		<main>
 			<section class="pastoralTeam" id="pastoralTeam">
 				<div class="container">
+					<h2>PASTORAL TEAM</h2>
 					<div class="bishop">
 						<img src="bishop.jpeg" alt="Photo 1" />
 						<h1>Most Rev. Dr. Martin D.A. Olorunmolu</h1>
@@ -143,7 +193,7 @@
 						<h1>Rev. Timothy Senibi</h1>
 						<p>Deacon, S.P.C.C</p>
 					</div>
-					<div class="cathechist">
+					<div class="cathechist1">
 						<div>
 							<img src="test2.jpeg" alt="Photo 5" />
 							<h1>Mr. Rueben Abioye</h1>
@@ -164,6 +214,8 @@
 							<h1>Miss Josephine Akande</h1>
 							<p>Cathechist, S.P.C.C</p>
 						</div>
+					</div>
+					<div class="cathechist2">
 						<div>
 							<img src="test2.jpeg" alt="Photo 9" />
 							<h1>Mrs. Esther Olonikadi</h1>
@@ -179,7 +231,6 @@
 							<h1>Mr. Martins Agbedor</h1>
 							<p>Cathechist, S.P.C.C</p>
 						</div>
-						<div></div>
 					</div>
 				</div>
 			</section>
