@@ -571,6 +571,57 @@ section {
 }
 /* END OF PATRON SAINT SECTION STYLING */
 
+/* START OF PASTORAL TEAM SECTION STYLING */
+
+.pastoralTeam h2 {
+	text-align: center;
+	font-size: 3em;
+	padding: 20px 0;
+	color: var(--bg-color);
+	background-color: var(--body-color);
+}
+.bishop {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 50px;
+}
+.bishop img,
+.priest img,
+.deacon img,
+.cathechist1 img,
+.cathechist2 img {
+	width: 320px;
+	height: 300px;
+	border-radius: 50%;
+}
+.priest {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+.deacon {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 50px;
+}
+.cathechist1,
+.cathechist2 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+/* END OF PASTORAL TEAM SECTION STYLING */
+
 /* START OF SOCIETIES SECTION STYLING */
 .parishSocieties .container {
 	background-color: #fff;
@@ -778,7 +829,7 @@ footer .container {
 	margin-right: 0;
 }
 
-footer h2 {
+footer .footer-section h2 {
 	margin-bottom: 10px;
 	padding: 10px;
 	text-align: center;
@@ -787,17 +838,17 @@ footer h2 {
 	color: var(--bg-color);
 }
 
-footer p {
+footer .footer-section p {
 	/* font-size: var(--third-size); */
 	margin-bottom: 10px;
 }
 
-footer ul {
+footer .footer-section ul {
 	list-style-type: none;
 	padding: 0;
 }
 
-footer li {
+footer .footer-section li {
 	margin-bottom: 10px;
 }
 
@@ -805,6 +856,10 @@ footer a {
 	text-decoration: none;
 	font-size: 1.2em;
 	color: var(--body-color);
+}
+
+footer .footer-social-icon a {
+	font-size: 3em;
 }
 
 footer a:hover {
@@ -815,23 +870,16 @@ footer a:hover {
 	justify-content: center;
 	align-items: center;
 }
-.footer-social-icon a {
-	color: #fff;
-	font-size: 16px;
+footer a i:last-of-type {
+	color: #3b5998;
+	font-size: 3em;
 	display: flex;
 	align-items: center;
-	margin-right: 15px;
-}
-.footer-social-icon i {
-	height: 40px;
-	width: 40px;
+	justify-content: center;
 	text-align: center;
-	line-height: 38px;
-	border-radius: 50%;
+	border-radius: 30px;
 }
-#facebook-bg {
-	background: #3b5998;
-}
+
 .footing .container {
 	background-color: #fff;
 	color: #000;
@@ -1057,6 +1105,15 @@ footer a:hover {
 		margin-bottom: 10px;
 		border: 1px solid var(--text-color);
 		padding: 10px;
+	}
+	.bishop img,
+	.priest img,
+	.deacon img,
+	.cathechist1 img,
+	.cathechist2 img {
+		width: 160px;
+		height: 150px;
+		border-radius: 50%;
 	}
 	.footer {
 		display: flex; /* Use flexbox for layout */
