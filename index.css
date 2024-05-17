@@ -529,6 +529,42 @@ section {
 	color: var(--text-color);
 	margin-bottom: 30px;
 }
+.timeline {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	height: auto;
+}
+
+.timeline-item {
+	position: relative;
+	clear: both; /* Ensure stacking */
+}
+.timeline-content {
+	text-align: center;
+	position: relative;
+	width: 50%; /* Half the container width */
+	background-color: var(--text-color);
+	color: var(--bg-color); /* Change color as needed */
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin: 10px 0;
+}
+.timeline-item:nth-child(even) .timeline-content {
+	float: right;
+}
+.timeline-item:nth-child(odd) .timeline-content {
+	float: left;
+}
+.timeline-content h2 {
+	font-size: 1em;
+	margin-top: 0;
+}
+.timeline-content p {
+	font-size: 0.8em;
+}
 
 .counter-card {
 	display: grid;
@@ -590,6 +626,7 @@ section {
 .bishop img,
 .priest img,
 .deacon img,
+.religious img,
 .cathechist1 img,
 .cathechist2 img {
 	width: 320px;
@@ -610,6 +647,14 @@ section {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 50px;
+}
+.religious {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding-top: 50px;
 }
 .cathechist1,
 .cathechist2 {
@@ -892,7 +937,10 @@ footer a i:last-of-type {
 
 /* END OF FOOTER SECTION STYLING */
 
-@media (max-width: 991px) {
+@media (max-width: 985px) {
+	html {
+		font-size: 62.5%;
+	}
 	.header {
 		padding: 12px 0;
 	}
@@ -1071,10 +1119,23 @@ footer a i:last-of-type {
 		width: 80%;
 		margin: 0 auto;
 	}
+	/* FOOTER SECTION */
+	.footer {
+		display: flex; /* Use flexbox for layout */
+		flex-direction: column; /* Stack items vertically */
+		align-items: flex-start; /* Align items to the left */
+		text-align: left; /* Align text to the left */
+	}
+	.footer-section {
+		width: 100%; /* Make each section occupy full width */
+		margin-bottom: 20px; /* Add some space between sections */
+	}
 }
 
+@media (max-width: 768px) {
+}
 @media (max-width: 486px) {
-	html {
+	body {
 		font-size: 62.5%;
 	}
 	.about-image {
@@ -1114,15 +1175,5 @@ footer a i:last-of-type {
 		width: 160px;
 		height: 150px;
 		border-radius: 50%;
-	}
-	.footer {
-		display: flex; /* Use flexbox for layout */
-		flex-direction: column; /* Stack items vertically */
-		align-items: flex-start; /* Align items to the left */
-		text-align: left; /* Align text to the left */
-	}
-	.footer-section {
-		width: 100%; /* Make each section occupy full width */
-		margin-bottom: 20px; /* Add some space between sections */
 	}
 }
