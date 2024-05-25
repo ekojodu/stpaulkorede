@@ -62,8 +62,8 @@ updateDateTimeForAll();
 // Update date and time every second (1000 milliseconds)
 setInterval(updateDateTimeForAll, 1000);
 
-// ********** END OF DATE FUNCTION ******************
-
+// END OF DATE FUNCTION
+// ******************************************************************************************
 // CAROUSEL FUNCTIONALITY
 document.addEventListener('DOMContentLoaded', function () {
 	const items = document.querySelectorAll('#carousel .carousel-item');
@@ -87,6 +87,53 @@ document.addEventListener('DOMContentLoaded', function () {
 	}, 6000); // Adjust interval (in milliseconds) based on your preference
 });
 
+// END OF CAROUSEL FUNCTION
+
+// ********************************************************************************************
+
+// DYNAMIC TEXT
+
+const texts = ['WELCOME', 'KÁÀBỌ̀'];
+let index = 0;
+let letterIndex = 0;
+let isDeleting = false;
+
+function type() {
+	const text = texts[index];
+	const speed = 500; // Typing speed in milliseconds
+	const deletingSpeed = 500; // Deleting speed in milliseconds
+
+	if (isDeleting) {
+		letterIndex--;
+	} else {
+		letterIndex++;
+	}
+
+	document.getElementById('dynamic-text').innerHTML = text.substring(
+		0,
+		letterIndex
+	);
+
+	if (!isDeleting && letterIndex === text.length) {
+		// When the entire text is typed, start deleting after a pause
+		isDeleting = true;
+		setTimeout(type, 1000); // Wait before starting to delete
+	} else if (isDeleting && letterIndex === 0) {
+		// When the entire text is deleted, move to the next text
+		isDeleting = false;
+		index = (index + 1) % texts.length; // Move to the next text
+		setTimeout(type, 500); // Wait before starting to type the next text
+	} else {
+		// Continue typing or deleting
+		setTimeout(type, isDeleting ? deletingSpeed : speed);
+	}
+}
+window.onload = type;
+
+// END OF DYNAMIC TEXT
+
+// **************************************************************************************************
+
 // IMPORT MAP
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -103,6 +150,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		title: 'My Location',
 	});
 });
+
+// END OF IMPORT MAP
+
+// ***************************************************************************
 
 // HISTORY NUMBER COUNT
 document.addEventListener('DOMContentLoaded', function () {
@@ -159,6 +210,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	setInterval(showNextPhoto, 6000); // Change photo every 3 seconds
 });
+
+// CONTACT FORM
+function sendEmail() {
+	const name = document.getElementById('name');
+	const email = document.getElementById('email');
+	const phoneNumber = document.getElementById('number');
+	const subject = document.getElementById('subject');
+	const msg = document.getElementById('message');
+
+	const bodyMessage = `Full Name: ${name.value} <br> Email: ${email.value} <br> Phone Number: ${phoneNumber.value} <br> Message: ${msg.value}`;
+
+	Email.send({
+		SecureToken: '797bea46-45ae-4ad7-87e8-2ba39fd7bc55',
+		To: 'stpaulkorede@gmail.com',
+		From: document.getElementById('email').value,
+		Subject: subject.value,
+		Body: bodyMessage,
+	}).then((message) => {
+		if ((message = 'OK')) {
+			Swal.fire({
+				title: 'Success',
+				text: 'Your Message has been sent successfully',
+				icon: 'success',
+			});
+		}
+	});
+}
 
 // COPYRIGHT FOOTER
 let footerParagraph = document.getElementById('footerParagraph');

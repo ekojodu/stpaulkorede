@@ -6,6 +6,11 @@
 		<title>
 			Pastoral Team - St. Paul The Apostle Catholic Church - Korede, KB
 		</title>
+		<!-- TAILWIND CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
 		<!-- FONT AWESOME ICONS CSS -->
 		<link
 			rel="stylesheet"
@@ -120,86 +125,142 @@
 		<!-- END OF HEADER SECTION DESIGN -->
 
 		<main>
-			<section class="pastoralTeam" id="pastoralTeam">
-				<div class="container">
-					<h2>PASTORAL TEAM</h2>
-					<div class="bishop">
-						<img src="bishop.jpeg" alt="Most Rev. Dr. Martin D.A. Olorunmolu" />
-						<h1>Most Rev. Dr. Martin D.A. Olorunmolu</h1>
-						<p>Bishop, Lokoja Diocese</p>
-					</div>
-					<div class="priest">
-						<div>
-							<img src="parish priest.jpeg" alt="Rev. Fr. Jude Olowonihi" />
-							<h1>Rev. Fr. Jude Adekunle Olowonihi</h1>
-							<p>Parish Priest, S.P.C.C</p>
-						</div>
-						<div>
+			<section class="pastoralTeam py-8" id="pastoralTeam">
+				<div class="container mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center mb-8">PASTORAL TEAM</h2>
+					<div class="grid gap-8">
+						<div class="bishop text-center">
 							<img
-								src="asst parish priest.jpg"
-								alt="Rev. Fr. Stephen Omomuniniyi"
+								src="bishop.jpeg"
+								alt="Most Rev. Dr. Martin D.A. Olorunmolu"
+								class="w-full h-auto mx-auto mb-4 rounded-lg"
 							/>
-							<h1>Rev. Fr. Stephen Omomuniniyi</h1>
-							<p>Asst. Parish Priest, S.P.C.C</p>
+							<h1 class="text-xl font-semibold">
+								Most Rev. Dr. Martin D.A. Olorunmolu
+							</h1>
+							<p class="text-gray-600">Bishop, Lokoja Diocese</p>
 						</div>
-					</div>
-					<div class="deacon">
-						<img src="deacon.jpeg" alt="Rev. Timothy Senibi" />
-						<h1>Rev. Timothy Senibi</h1>
-						<p>Deacon, S.P.C.C</p>
-					</div>
-					<div class="religious">
-						<div>
+						<div class="priest grid md:grid-cols-2 gap-4">
+							<div class="text-center">
+								<img
+									src="parish priest.jpg"
+									alt="Rev. Fr. Jude Olowonihi"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">
+									Rev. Fr. Jude Adekunle Olowonihi
+								</h1>
+								<p class="text-gray-600">Parish Priest, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="asst parish priest.jpg"
+									alt="Rev. Fr. Stephen Omomuniniyi"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">
+									Rev. Fr. Stephen Omomuniniyi
+								</h1>
+								<p class="text-gray-600">Asst. Parish Priest, S.P.C.C</p>
+							</div>
+						</div>
+						<div class="deacon text-center">
 							<img
-								src="religious1.jpeg"
-								alt="Rev. Sr. Rosemary Olonikadi (E.H.J)"
+								src="deacon.jpg"
+								alt="Rev. Timothy Senibi"
+								class="w-full h-auto mx-auto mb-4 rounded-lg"
 							/>
-							<h1>Rev. Sr. Rosemary Olonikadi (E.H.J)</h1>
-							<p>Religious, S.P.C.C</p>
+							<h1 class="text-xl font-semibold">Rev. Timothy Senibi</h1>
+							<p class="text-gray-600">Deacon, S.P.C.C</p>
 						</div>
-						<div>
-							<img src="religious2.jpeg" alt="Rev. Sr. Monica Roland (S.H.J)" />
-							<h1>Rev. Sr. Monica Roland (S.H.J)</h1>
-							<p>Religious, S.P.C.C</p>
+						<div class="religious grid md:grid-cols-2 gap-4">
+							<div class="text-center">
+								<img
+									src="religious1.jpg"
+									alt="Rev. Sr. Rosemary Olonikadi (E.H.J)"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">
+									Rev. Sr. Rosemary Olonikadi (E.H.J)
+								</h1>
+								<p class="text-gray-600">Religious, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="religious2.jpg"
+									alt="Rev. Sr. Monica Roland (S.H.J)"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">
+									Rev. Sr. Monica Roland (S.H.J)
+								</h1>
+								<p class="text-gray-600">Religious, S.P.C.C</p>
+							</div>
 						</div>
-					</div>
-					<div class="cathechist1">
-						<div>
-							<img src="cra.jpeg" alt="Cat. Rueben Abioye" />
-							<h1>Cat. Rueben Abioye</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div>
-							<img src="cjt.jpeg" alt="Cat. John Toluhi" />
-							<h1>Cat. John Toluhi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div>
-							<img src="cpo.jpeg" alt="Cat. Patrick Obafemi" />
-							<h1>Cat. Patrick Obafemi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div>
-							<img src="cja.jpeg" alt="Cat. Josephine Akande" />
-							<h1>Cat. Josephine Akande</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-					</div>
-					<div class="cathechist2">
-						<div>
-							<img src="ceo.jpeg" alt="Cat. Esther Olonikadi" />
-							<h1>Cat. Esther Olonikadi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div>
-							<img src="cmo.jpeg" alt="Cat. Martin Olonikadi" />
-							<h1>Cat. Martin Olonikadi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div>
-							<img src="cma.jpeg" alt="Cat. Martin Agbedor" />
-							<h1>Cat. Martin Agbedor</h1>
-							<p>Cathechist, S.P.C.C</p>
+						<div class="cathechist1 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+							<div class="text-center">
+								<img
+									src="cra.jpg"
+									alt="Cat. Rueben Abioye"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. Rueben Abioye</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="cjt.jpg"
+									alt="Cat. John Toluhi"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. John Toluhi</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="cpo.jpg"
+									alt="Cat. Patrick Obafemi"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. Patrick Obafemi</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="cja.jpg"
+									alt="Cat. Josephine Akande"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. Josephine Akande</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="ceo.jpg"
+									alt="Cat. Esther Olonikadi"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. Esther Olonikadi</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="cmo.jpg"
+									alt="Cat. Martin Olonikadi"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. Martin Olonikadi</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
+							<div class="text-center">
+								<img
+									src="cma.jpg"
+									alt="Cat. Martin Agbedor"
+									class="w-full h-auto mx-auto mb-4 rounded-lg"
+								/>
+								<h1 class="text-xl font-semibold">Cat. Martin Agbedor</h1>
+								<p class="text-gray-600">Cathechist, S.P.C.C</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -227,17 +288,18 @@
 					</div>
 					<div class="footer-section">
 						<h2>About Us</h2>
-						<ul>
-							<li><a href="history.html">Our History</a></li>
-							<li><a href="paul.html">Patron Saint</a></li>
-							<li><a href="pastoral_team.html">Pastoral Team</a></li>
-							<li>
-								<a href="pastoral_council.html">Parish Pastoral Council</a>
-							</li>
-							<li><a href="laity_council.html">Parish Laity Council</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="parish_donations.html">Donate</a></li>
-						</ul>
+						<div class="footlinks">
+							<ul>
+								<li><a href="history.html">Our History</a></li>
+								<li><a href="paul.html">Patron Saint</a></li>
+								<li><a href="pastoral_team.html">Pastoral Team</a></li>
+								<li>
+									<a href="pastoral_council.html">Parish Pastoral Council</a>
+								</li>
+								<li><a href="laity_council.html">Parish Laity Council</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="footer-section">
 						<h2>Follow Us</h2>

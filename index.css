@@ -108,6 +108,7 @@ section {
 }
 
 .header .logo {
+	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 	border-bottom: 1px solid grey;
@@ -116,6 +117,7 @@ section {
 .header .logo img {
 	width: 100px;
 	height: 100px;
+	margin: auto;
 }
 
 .header .logo h1 {
@@ -138,6 +140,11 @@ section {
 	display: none;
 }
 
+.header .menu .head .close-menu-btn {
+	background-color: #2e8b57;
+	color: #fff;
+}
+
 .header .menu ul {
 	list-style: none;
 }
@@ -156,7 +163,7 @@ section {
 
 .header .menu a {
 	text-decoration: none;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: var(--body-color);
 	line-height: 1.5;
 	display: block;
@@ -174,7 +181,6 @@ section {
 .header .menu i {
 	font-size: 10px;
 	pointer-events: none;
-	user-select: none;
 	position: absolute;
 	color: var(--body-color);
 	top: calc(50% - 5px);
@@ -213,7 +219,7 @@ section {
 
 .header .menu .sub-menu a {
 	padding: 6px 24px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .header .menu .sub-menu .dropdown > a {
@@ -365,7 +371,7 @@ section {
 	padding: 50px;
 }
 
-.welcome-text h1 {
+.welcome-text span {
 	font-size: 3em;
 	padding-bottom: 10px;
 }
@@ -374,6 +380,10 @@ section {
 	font-size: 1.5em;
 	padding-bottom: 20px;
 	color: var(--text-color);
+}
+#text-container {
+	display: inline-block;
+	position: relative;
 }
 
 .marquee {
@@ -399,34 +409,6 @@ section {
 
 /* END OF WELCOME DIV STYLING */
 /* START OF ABOUT SECTION STYLING */
-.about {
-	width: 100%;
-	height: 100%;
-}
-
-.about .container {
-	display: flex;
-	gap: 20px;
-	/* align-items: flex-start; */
-	padding: 10px 50px;
-
-	/* Align items to the start of the flex container */
-}
-
-.about-image {
-	width: 100%;
-	height: 100%;
-	flex: 1;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-}
-
-.image-heading {
-	padding-bottom: 20px;
-	font-size: 2em;
-}
-
 .photo {
 	display: flex;
 	justify-content: center;
@@ -452,6 +434,7 @@ section {
 }
 
 .about-text {
+	margin-top: 10em;
 	flex: 1;
 	padding: 20px;
 }
@@ -627,8 +610,7 @@ section {
 .priest img,
 .deacon img,
 .religious img,
-.cathechist1 img,
-.cathechist2 img {
+.cathechist1 img {
 	width: 320px;
 	height: 300px;
 	border-radius: 50%;
@@ -641,6 +623,7 @@ section {
 	flex-wrap: wrap;
 	padding-top: 50px;
 }
+
 .deacon {
 	display: flex;
 	flex-direction: column;
@@ -656,8 +639,7 @@ section {
 	flex-wrap: wrap;
 	padding-top: 50px;
 }
-.cathechist1,
-.cathechist2 {
+.cathechist1 {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -750,7 +732,21 @@ section {
 	padding: 5px;
 }
 /* END OF ACTIVITIES SECTION STYLING */
+/* ******************************************************* */
 
+/* START OF NEWS/EVENTS STYLING */
+.event-cell {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid #e5e7eb; /* Tailwind's gray-300 */
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: #f9fafb; /* Tailwind's gray-50 */
+}
+/* END OF NEWS/EVENTS STYLING */
+
+/* *************************************************************** */
 /* START OF CONTACT SECTION STYLING */
 .contact-map {
 	text-align: center;
@@ -847,14 +843,15 @@ iframe {
 
 /* FOOTER SECTION STYLING */
 footer .container {
-	margin-top: 20px;
-	background-color: #fff;
-	color: #000;
+	/* margin-top: 20px; */
+	color: #fff;
+	background-color: #000;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	border-top: 2px solid #000030;
 }
 
 .footer {
@@ -862,12 +859,20 @@ footer .container {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
+	/* align-items: center; */
 	justify-items: center;
 }
 
 .footer-section {
 	box-sizing: border-box;
+}
+
+.footlinks {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .footer-section:last-child {
@@ -884,7 +889,7 @@ footer .footer-section h2 {
 }
 
 footer .footer-section p {
-	/* font-size: var(--third-size); */
+	font-size: 1em;
 	margin-bottom: 10px;
 }
 
@@ -899,7 +904,7 @@ footer .footer-section li {
 
 footer a {
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1em;
 	color: var(--body-color);
 }
 
@@ -1124,36 +1129,19 @@ footer a i:last-of-type {
 		display: flex; /* Use flexbox for layout */
 		flex-direction: column; /* Stack items vertically */
 		align-items: flex-start; /* Align items to the left */
-		text-align: left; /* Align text to the left */
+		text-align: center; /* Align text to the left */
 	}
 	.footer-section {
 		width: 100%; /* Make each section occupy full width */
 		margin-bottom: 20px; /* Add some space between sections */
 	}
+
+	.footlinks {
+		text-align: center;
+	}
 }
 
 @media (max-width: 768px) {
-}
-@media (max-width: 486px) {
-	body {
-		font-size: 62.5%;
-	}
-	.about-image {
-		display: block;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 16em;
-	}
-	.photo {
-		margin-left: -2em;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.photo img {
-		width: 160px;
-		height: 150px;
-	}
 	.cards {
 		width: 80%;
 		margin: 0 auto;
@@ -1166,6 +1154,26 @@ footer a i:last-of-type {
 		margin-bottom: 10px;
 		border: 1px solid var(--text-color);
 		padding: 10px;
+	}
+}
+@media (max-width: 486px) {
+	body {
+		font-size: 62.5%;
+	}
+	.about-image {
+		margin-bottom: 16em;
+	}
+	.photo {
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.photo img {
+		align-items: center;
+		width: 50%;
+		margin: auto;
+		height: 150px;
 	}
 	.bishop img,
 	.priest img,

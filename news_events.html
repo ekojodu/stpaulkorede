@@ -3,7 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Holy Order-Sixth Sacrament of Initiation</title>
+		<title>News and Events</title>
+		<!-- TAILWIND CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
 		<!-- FONT AWESOME ICONS CSS -->
 		<link
 			rel="stylesheet"
@@ -117,7 +122,60 @@
 		<!-- END OF HEADER SECTION DESIGN -->
 
 		<section class="parishNews" id="parishNews">
-			<div class="container"></div>
+			<div class="container mx-auto p-4">
+				<h1 class="text-3xl font-bold text-center mb-8">Upcoming Events</h1>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">Children Harvest</h2>
+							<p class="text-gray-600">Date: May 12, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 1...</p>
+					</div>
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">Youth Harvest</h2>
+							<p class="text-gray-600">Date: September 1, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 2...</p>
+					</div>
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">St. James Okoyin Harvest</h2>
+							<p class="text-gray-600">Date: October 27, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 3...</p>
+					</div>
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">St. James Ayogon Harvest</h2>
+							<p class="text-gray-600">Date: November 3, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 4...</p>
+					</div>
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">St. Daniel Okebukun Harvest</h2>
+							<p class="text-gray-600">Date: November 10, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 5...</p>
+					</div>
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">Adult Harvest</h2>
+							<p class="text-gray-600">Date: November 17, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 6...</p>
+					</div>
+					<div class="event-cell">
+						<div>
+							<h2 class="text-xl font-semibold">St Theresa Odo-ape Harvest</h2>
+							<p class="text-gray-600">Date: December 1, 2024</p>
+						</div>
+						<p class="text-gray-700 mt-2">Description of Event 6...</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- START OF FOOTER SECTION DESIGN -->
@@ -142,17 +200,18 @@
 					</div>
 					<div class="footer-section">
 						<h2>About Us</h2>
-						<ul>
-							<li><a href="history.html">Our History</a></li>
-							<li><a href="paul.html">Patron Saint</a></li>
-							<li><a href="pastoral_team.html">Pastoral Team</a></li>
-							<li>
-								<a href="pastoral_council.html">Parish Pastoral Council</a>
-							</li>
-							<li><a href="laity_council.html">Parish Laity Council</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="parish_donations.html">Donate</a></li>
-						</ul>
+						<div class="footlinks">
+							<ul>
+								<li><a href="history.html">Our History</a></li>
+								<li><a href="paul.html">Patron Saint</a></li>
+								<li><a href="pastoral_team.html">Pastoral Team</a></li>
+								<li>
+									<a href="pastoral_council.html">Parish Pastoral Council</a>
+								</li>
+								<li><a href="laity_council.html">Parish Laity Council</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="footer-section">
 						<h2>Follow Us</h2>

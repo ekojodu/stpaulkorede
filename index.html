@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>St. Paul Catholic Church Korede Kabba</title>
+		<!-- Include Tailwind CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
 		<!-- GOOGLE FONT CSS -->
 		<link
 			rel="stylesheet"
@@ -24,6 +29,8 @@
 		/>
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" href="index.css" />
+		<!-- FLAVICON -->
+		<link rel="icon" href="saintpaul.jpeg" />
 	</head>
 
 	<body>
@@ -127,39 +134,62 @@
 		<main>
 			<!-- START OF HOME SECTION DESIGN -->
 			<section class="home" id="home">
-				<div class="container">
-					<div id="carousel">
+				<div class="container mx-auto">
+					<div id="carousel" class="relative">
 						<div class="carousel-item">
-							<img alt="" src="fourth image.jpg" />
-							<div class="carousel-caption">
-								<span>Discover God's Love:</span> Join Our Faith-filled
-								Community Today!
+							<img alt="" src="fourth image.jpg" class="w-full" />
+							<div
+								class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-white text-center"
+							>
+								<h2 class="text-lg md:text-xl lg:text-2xl">
+									Discover God's Love:
+								</h2>
+								<p class="text-base md:text-lg lg:text-xl">
+									Join Our Faith-filled Community Today!
+								</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img alt="" src="catholic fellowship.jpg" />
-							<div class="carousel-caption">
-								<span>Embrace Hope and Unity:</span> Experience the Joy of
-								Catholic Fellowship.
+							<img alt="" src="catholic fellowship.jpg" class="w-full" />
+							<div
+								class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-white text-center"
+							>
+								<h2 class="text-lg md:text-xl lg:text-2xl">
+									Embrace Hope and Unity:
+								</h2>
+								<p class="text-base md:text-lg lg:text-xl">
+									Experience the Joy of Catholic Fellowship.
+								</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img alt="" src="third image.jpg" />
-							<div class="carousel-caption">
-								<span>Grow in Faith:</span> Explore Sacred Traditions and
-								Meaningful Worship.
+							<img alt="" src="third image.jpg" class="w-full" />
+							<div
+								class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-white text-center"
+							>
+								<h2 class="text-lg md:text-xl lg:text-2xl">Grow in Faith:</h2>
+								<p class="text-base md:text-lg lg:text-xl">
+									Explore Sacred Traditions and Meaningful Worship.
+								</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img alt="" src="fourth image.jpg" />
-							<div class="carousel-caption">
-								<span>Share in God's Grace: </span>Find Purpose in Service and
-								Compassion.
+							<img alt="" src="fourth image.jpg" class="w-full" />
+							<div
+								class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-white text-center"
+							>
+								<h2 class="text-lg md:text-xl lg:text-2xl">
+									Share in God's Grace:
+								</h2>
+								<p class="text-base md:text-lg lg:text-xl">
+									Find Purpose in Service and Compassion
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<!-- END OF HOME SECTION DESIGN -->
 
 			<!-- START OF WELCOME DIV DESIGN -->
@@ -167,7 +197,9 @@
 				<div class="container">
 					<div class="welcome-container">
 						<div class="welcome-text">
-							<h1>WELCOME!</h1>
+							<div id="text-container">
+								<span id="dynamic-text"></span>
+							</div>
 							<div class="marquee">
 								<p>
 									<i>oluwa korede.. ore ofe lapapo</i>
@@ -181,100 +213,87 @@
 
 			<!-- START OF ABOUT SECTION DESIGN -->
 			<section class="about" id="about">
-				<div class="container">
-					<div class="about-image">
-						<h1 class="image-heading">Pastoral Team</h1>
-						<div class="photo active">
-							<img src="bishop.jpeg" alt="Photo 1" />
-							<h1>Most Rev. Dr. Martin D.A. Olorunmolu</h1>
-							<p>Bishop, Lokoja Diocese</p>
+				<div class="container mx-auto px-4">
+					<h1
+						class="image-heading text-center text-xl md:text-2xl lg:text-3xl pt-10 mt-18 mb-4"
+					>
+						Pastoral Team
+					</h1>
+					<div class="flex flex-1 flex-col md:flex-row g-10">
+						<div class="about-image md:w-1/2 p-4">
+							<div class="photo active mb-4">
+								<img
+									src="bishop.jpeg"
+									alt="Most Rev. Dr. Martin D.A. Olorunmolu"
+									class="w-full h-auto mb-2"
+								/>
+								<h1 class="text-lg md:text-xl lg:text-2xl">
+									Most Rev. Dr. Martin D.A. Olorunmolu
+								</h1>
+								<p class="text-sm md:text-base">Bishop, Lokoja Diocese</p>
+							</div>
+							<div class="photo mb-4">
+								<img
+									src="parish priest.jpg"
+									alt="Rev. Fr. Jude Adekunle Olowonihi"
+									class="w-full h-auto mb-2 fada"
+								/>
+								<h1 class="text-lg md:text-xl lg:text-2xl">
+									Rev. Fr. Jude Adekunle Olowonihi
+								</h1>
+								<p class="text-sm md:text-base">Parish Priest, S.P.C.C</p>
+							</div>
+							<div class="photo mb-4">
+								<img
+									src="asst parish priest.jpg"
+									alt="Rev. Fr. Stephen Omomuniniyi"
+									class="w-full h-auto mb-2"
+								/>
+								<h1 class="text-lg md:text-xl lg:text-2xl">
+									Rev. Fr. Stephen Omomuniniyi
+								</h1>
+								<p class="text-sm md:text-base">Asst. Parish Priest, S.P.C.C</p>
+							</div>
+							<!-- Add other photos similarly -->
 						</div>
-						<div class="photo">
-							<img src="parish priest.jpeg" alt="Photo 2" />
-							<h1>Rev. Fr. Jude Olowonihi</h1>
-							<p>Parish Priest, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="asst parish priest.jpg" alt="Photo 3" />
-							<h1>Rev. Fr. Stephen Omomuniniyi</h1>
-							<p>Asst. Parish Priest, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="deacon.jpeg" alt="Photo 4" />
-							<h1>Rev. Timothy Senibi</h1>
-							<p>Deacon, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 5" />
-							<h1>Mr. Rueben Abioye</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 6" />
-							<h1>Mr. John Toluhi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 7" />
-							<h1>Mr. Timothy Obafemi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 8" />
-							<h1>Miss Josephine Akande</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 9" />
-							<h1>Mrs. Esther Olonikadi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 9" />
-							<h1>Mr. Martins Olonikadi</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-						<div class="photo">
-							<img src="test2.jpeg" alt="Photo 9" />
-							<h1>Mr. Martins</h1>
-							<p>Cathechist, S.P.C.C</p>
-						</div>
-					</div>
-					<div class="about-text">
-						<h1 class="image-heading">
-							Welcome to St Paul Catholic Church, Korede <br />
-							the Center Of Grace
-						</h1>
-						<p>
-							Nestled in the serene town of Kabba, Kogi State, Nigeria, stands
-							the revered St. Paul Catholic Church, a beacon of faith and
-							community since its establishment. With its rich history dating
-							back more than a decade, this sacred haven has been a cornerstone
-							of spiritual guidance and communal unity for generations of
-							worshippers.
-						</p>
+						<div class="about-text md:w-1/2 p-4">
+							<h1
+								class="image-heading text-xl md:text-2xl lg:text-3xl pt-[-10] mb-4"
+							>
+								Welcome to St Paul Catholic Church, Korede the Center Of Grace
+							</h1>
+							<p class="text-sm md:text-base lg:text-lg mb-4">
+								Nestled in the serene town of Kabba, Kogi State, Nigeria, stands
+								the revered St. Paul Catholic Church, a beacon of faith and
+								community since its establishment. With its rich history dating
+								back more than a decade, this sacred haven has been a
+								cornerstone of spiritual guidance and communal unity for
+								generations of worshippers.
+							</p>
 
-						<p>
-							Perched amidst lush greenery, the church's majestic facade
-							welcomes all with open arms, inviting them into a sanctuary of
-							peace and reflection. Within its walls, the echoes of heartfelt
-							prayers and uplifting hymns resonate, fostering a sense of
-							spiritual connection and renewal.
-						</p>
+							<p class="text-sm md:text-base lg:text-lg mb-4">
+								Perched amidst lush greenery, the church's majestic facade
+								welcomes all with open arms, inviting them into a sanctuary of
+								peace and reflection. Within its walls, the echoes of heartfelt
+								prayers and uplifting hymns resonate, fostering a sense of
+								spiritual connection and renewal.
+							</p>
 
-						<p>
-							Under the guidance of devoted clergy and dedicated parishioners,
-							St. Paul Catholic Church embodies the teachings of Christ,
-							extending compassion, love, and support to all who seek solace
-							within its embrace. Through vibrant liturgical celebrations,
-							meaningful sacraments, and charitable endeavors, it continues to
-							be a source of inspiration and hope, enriching the lives of
-							individuals and families throughout the Kabba community and
-							beyond.
-						</p>
+							<p class="text-sm md:text-base lg:text-lg mb-4">
+								Under the guidance of devoted clergy and dedicated parishioners,
+								St. Paul Catholic Church embodies the teachings of Christ,
+								extending compassion, love, and support to all who seek solace
+								within its embrace. Through vibrant liturgical celebrations,
+								meaningful sacraments, and charitable endeavors, it continues to
+								be a source of inspiration and hope, enriching the lives of
+								individuals and families throughout the Kabba community and
+								beyond.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
+
 			<!-- END OF ABOUT SECTION DESIGN -->
 			<!-- START OF INTRO ACTIVITIES SECTION DESIGN -->
 			<section class="intro" id="intro">
@@ -344,17 +363,18 @@
 					</div>
 					<div class="footer-section">
 						<h2>About Us</h2>
-						<ul>
-							<li><a href="history.html">Our History</a></li>
-							<li><a href="paul.html">Patron Saint</a></li>
-							<li><a href="pastoral_team.html">Pastoral Team</a></li>
-							<li>
-								<a href="pastoral_council.html">Parish Pastoral Council</a>
-							</li>
-							<li><a href="laity_council.html">Parish Laity Council</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="parish_donations.html">Donate</a></li>
-						</ul>
+						<div class="footlinks">
+							<ul>
+								<li><a href="history.html">Our History</a></li>
+								<li><a href="paul.html">Patron Saint</a></li>
+								<li><a href="pastoral_team.html">Pastoral Team</a></li>
+								<li>
+									<a href="pastoral_council.html">Parish Pastoral Council</a>
+								</li>
+								<li><a href="laity_council.html">Parish Laity Council</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="footer-section">
 						<h2>Follow Us</h2>
